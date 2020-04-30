@@ -5,38 +5,38 @@ source 'https://rubygems.org'
 ruby '2.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.8'
 #gem 'rails', '4.2.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.4'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '>= 2.7.2'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 gem 'haml'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.5'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 2.5.3'
 
-gem 'jquery-turbolinks'
+gem 'jquery-turbolinks', '>= 2.1.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.4', '>= 2.4.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 group :doc do
-  gem 'sdoc', '~> 0.4.0'
+  gem 'sdoc', '~> 1.0.0'
 end
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'devise',           '~> 3.5.2'
-gem 'devise_invitable', '~> 1.5.2'
+gem 'devise', '~> 3.5.3'
+gem 'devise_invitable', '~> 1.5.5'
 
 gem 'figaro'
 
@@ -46,11 +46,11 @@ gem 'bootstrap-will_paginate'
 # gem 'ajax_pagination'
 
 ## Authorization gem
-gem "pundit"
+gem "pundit", ">= 1.1.0"
 
 gem 'pusher'
 
-gem 'js_cookie_rails'
+gem 'js_cookie_rails', '>= 1.0.1'
 
 # gem 'nokogiri', '~> 1.6', '>= 1.6.7'
 
@@ -60,11 +60,11 @@ gem 'js_cookie_rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'active_record-acts_as'
+gem 'active_record-acts_as', '>= 1.0.7'
 
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.0'
 
-gem 'json'
+gem 'json', '>= 2.3.0'
 gem 'rest-client'
 
 gem 'cocoon'
@@ -74,15 +74,15 @@ gem 'cocoon'
 gem 'ffaker'
 gem 'faker'
 
-gem 'ransack'
+gem 'ransack', '>= 1.7.0'
 
-gem 'mailgun_rails'
+gem 'mailgun_rails', '>= 0.8.0'
 
 group :development do
-  gem 'haml-rails'
-  gem 'bullet'
+  gem 'haml-rails', '>= 0.9.0'
+  gem 'bullet', '>= 5.4.3'
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.2', '>= 2.2.1'
 end
 
 group :development, :test do
@@ -92,10 +92,10 @@ group :development, :test do
   gem 'byebug'
 
   # RSPEC testing
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.0'
 
   # Factory girl to add factories
-  gem 'factory_girl_rails', '~> 4.0'
+  gem 'factory_girl_rails', '~> 4.5', '>= 4.5.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -105,12 +105,12 @@ group :development, :test do
 end
 
 group :test do
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '>= 1.4.2', :require => false
   gem 'database_cleaner'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers', require: false
   gem 'email_spec'
   gem 'poltergeist'
-  gem 'codeclimate-test-reporter'
+  gem 'codeclimate-test-reporter', '>= 0.4.8'
   gem 'launchy'
   gem 'selenium-webdriver' # Enables running cuke tests with browser (see env.rb)
   gem 'webmock'
