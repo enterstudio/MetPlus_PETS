@@ -121,5 +121,5 @@ group :production do
   # Use Postgres as the database for Active Record
   gem 'pg'
   gem 'rails_12factor'
-  gem 'puma'
+  gem 'puma', '>= 3.12.6'
 end
