@@ -109,7 +109,7 @@ group :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers', require: false
   gem 'email_spec'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.8.1'
   gem 'codeclimate-test-reporter'
   gem 'launchy'
   gem 'selenium-webdriver' # Enables running cuke tests with browser (see env.rb)
