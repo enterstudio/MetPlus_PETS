@@ -5,25 +5,25 @@ source 'https://rubygems.org'
 ruby '2.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '5.0.0'
 #gem 'rails', '4.2.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.5'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 gem 'haml'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 2.5.3'
 
-gem 'jquery-turbolinks'
+gem 'jquery-turbolinks', '>= 2.1.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -35,8 +35,8 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'devise',           '~> 3.5.2'
-gem 'devise_invitable', '~> 1.5.2'
+gem 'devise', '~> 4.0.0'
+gem 'devise_invitable', '~> 1.6.0'
 
 gem 'figaro'
 
@@ -50,7 +50,7 @@ gem "pundit"
 
 gem 'pusher'
 
-gem 'js_cookie_rails'
+gem 'js_cookie_rails', '>= 1.0.1'
 
 # gem 'nokogiri', '~> 1.6', '>= 1.6.7'
 
@@ -74,15 +74,15 @@ gem 'cocoon'
 gem 'ffaker'
 gem 'faker'
 
-gem 'ransack'
+gem 'ransack', '>= 1.7.0'
 
-gem 'mailgun_rails'
+gem 'mailgun_rails', '>= 0.8.0'
 
 group :development do
-  gem 'haml-rails'
+  gem 'haml-rails', '>= 0.9.0'
   gem 'bullet'
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.2', '>= 2.2.1'
 end
 
 group :development, :test do
@@ -92,24 +92,24 @@ group :development, :test do
   gem 'byebug'
 
   # RSPEC testing
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.0'
 
   # Factory girl to add factories
-  gem 'factory_girl_rails', '~> 4.0'
+  gem 'factory_girl_rails', '~> 4.5', '>= 4.5.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  gem 'jasmine'
+  gem 'jasmine', '>= 2.4.0'
   gem 'jasmine-jquery-rails'
 end
 
 group :test do
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '>= 1.4.3', :require => false
   gem 'database_cleaner'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers', require: false
   gem 'email_spec'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.8.1'
   gem 'codeclimate-test-reporter'
   gem 'launchy'
   gem 'selenium-webdriver' # Enables running cuke tests with browser (see env.rb)
@@ -121,5 +121,5 @@ group :production do
   # Use Postgres as the database for Active Record
   gem 'pg'
   gem 'rails_12factor'
-  gem 'puma'
+  gem 'puma', '>= 2.12.0'
 end
