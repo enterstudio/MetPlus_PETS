@@ -108,12 +108,12 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers', require: false
-  gem 'email_spec'
+  gem 'email_spec', '>= 1.6.0'
   gem 'poltergeist'
   gem 'codeclimate-test-reporter'
-  gem 'launchy'
+  gem 'launchy', '>= 2.4.3'
   gem 'selenium-webdriver' # Enables running cuke tests with browser (see env.rb)
-  gem 'webmock'
+  gem 'webmock', '>= 1.21.0'
 end
 
 gem 'airbrake', '~> 5.4'
