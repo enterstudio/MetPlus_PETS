@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 ruby '2.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '5.2.8.1'
 #gem 'rails', '4.2.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -60,9 +60,9 @@ gem 'js_cookie_rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'active_record-acts_as'
+gem 'active_record-acts_as', '>= 2.0.0'
 
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.3'
 
 gem 'json'
 gem 'rest-client'
@@ -105,7 +105,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '>= 1.4.3', :require => false
   gem 'database_cleaner'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers', require: false
   gem 'email_spec'
