@@ -92,7 +92,7 @@ group :development, :test do
   gem 'byebug'
 
   # RSPEC testing
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 8.0', '>= 8.0.0'
 
   # Factory girl to add factories
   gem 'factory_girl_rails', '~> 4.0'
